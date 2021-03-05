@@ -108,15 +108,25 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'About',
-          to: '/about'
+          title: 'Form Test',
+          to: '/form'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Info',
+          to: '/info'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Refresh Sample',
+          to: '/sample'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
       title: 'Vuetify.js'
-    }
+    };
   }
-}
+};
 </script>
