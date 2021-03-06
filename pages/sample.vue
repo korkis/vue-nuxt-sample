@@ -12,12 +12,16 @@
         {{ mountain.title }}
       </li>
     </ul>
-    <button @click="$fetch">
+    <v-btn @click="$fetch">
       Refresh
-    </button>
-    <button @click="refresh">
+    </v-btn>
+    <v-btn @click="refresh">
       Refresh2
-    </button>
+    </v-btn>
+    <a href="/my-axios">Move with Anchor</a>
+    <v-btn @click="moveToAxios">
+      Move with javascript
+    </v-btn>
   </div>
 </template>
 
@@ -37,6 +41,9 @@ export default {
   methods: {
     refresh () {
       this.$fetch();
+    },
+    moveToAxios () {
+      this.$router.push('/my-axios');
     }
   }
 };

@@ -120,6 +120,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Refresh Sample',
           to: '/sample'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'My Axios',
+          to: '/my-axios'
         }
       ],
       miniVariant: false,

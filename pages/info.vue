@@ -1,20 +1,26 @@
 <template>
-  <v-row>
-    <v-col>
-      <h1>
-        Info2
-      </h1>
-    </v-col>
-    <v-col>
-      {{ info }}
-    </v-col>
-  </v-row>
+  <div>
+    <h1>
+      Info
+    </h1>
+    <v-row>
+      <v-col>
+        Info: {{ info }}
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <p>env.abc : {{ abc }}</p>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 <script>
 export default {
   data () {
     return {
-      info: 'ABC'
+      info: '',
+      abc: process.env.abc
     };
   },
   mounted () {
