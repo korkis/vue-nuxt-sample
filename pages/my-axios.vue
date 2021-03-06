@@ -15,9 +15,10 @@
 </template>
 <script>
 export default {
-  asyncData ({ req }) {
+  asyncData ({ req, redirect }) {
     console.log('asyncData', process.client ? 'client' : 'server');
     console.log('req', req);
+    redirect('/info');
   },
   data () {
     return {
