@@ -23,6 +23,19 @@ export default {
       abc: process.env.abc
     };
   },
+  fetch () {
+    console.log('fetch');
+  },
+  head: {
+    title: 'Home page',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description'
+      }
+    ]
+  },
   mounted () {
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
@@ -30,6 +43,9 @@ export default {
     });
     this.info = this.$route.currentRoute;
     console.log('$route', this.$route);
+  },
+  created () {
+    console.log('created');
   }
 };
 </script>

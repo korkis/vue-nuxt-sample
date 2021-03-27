@@ -40,6 +40,7 @@ export default {
   },
   methods: {
     refresh () {
+      this.$myMethod();
       this.$fetch();
     },
     moveToAxios () {

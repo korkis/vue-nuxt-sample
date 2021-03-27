@@ -56,6 +56,10 @@ export default {
   env: {
     abc: 'def'
   },
+  
+  router: {
+    middleware: ['repair'],
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

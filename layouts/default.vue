@@ -117,7 +117,7 @@ export default {
           to: '/info'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-information',
           title: 'Refresh Sample',
           to: '/sample'
         },
@@ -125,6 +125,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'My Axios',
           to: '/my-axios'
+        },
+        {
+          icon: 'mdi-save',
+          title: 'Store',
+          to: '/store'
         }
       ],
       miniVariant: false,

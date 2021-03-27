@@ -20,3 +20,14 @@ localize('ko');
 
 Vue.component('ValidationProvider', ValidationProvider);
 Vue.component('ValidationObserver', ValidationObserver);
+
+// Write Plugin
+// const MyPlugin = {};
+// MyPlugin.install = function (Vue, options) {
+//   Vue.prototype.$myMethod = function () {
+//     alert('myMethod');
+//   };
+// };
+
+// Use Plugin
+// Vue.use(MyPlugin);
