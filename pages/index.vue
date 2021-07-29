@@ -70,6 +70,8 @@
           >
             Continue
           </v-btn>
+          <a href="http://localhost:8080/a.png" download>다운로드</a>
+          <a href="http://localhost:8080/api/download">다운로드</a>
         </v-card-actions>
       </v-card>
     </v-col>

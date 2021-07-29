@@ -15,5 +15,27 @@
         </footer>
       </blockquote>
     </v-col>
+    <v-col>
+      <v-btn @click="changeContent">
+        변경
+      </v-btn>
+      <my-button :content="content" />
+    </v-col>
   </v-row>
 </template>
+<script>
+import MyButton from '~/components/MyButton.vue';
+export default {
+  components: { MyButton },
+  data () {
+    return {
+      content: 'HI'
+    };
+  },
+  methods: {
+    changeContent () {
+      this.content = '변경 버튼';
+    }
+  }
+};
+</script>
