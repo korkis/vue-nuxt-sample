@@ -127,9 +127,19 @@ export default {
           to: '/my-axios'
         },
         {
-          icon: 'mdi-save',
+          icon: 'mdi-store',
           title: 'Store',
           to: '/store'
+        },
+        {
+          icon: 'mdi-select',
+          title: 'Select Test',
+          to: '/select-test'
+        },
+        {
+          icon: 'mdi-refresh',
+          title: 'New Test',
+          to: '/new-test'
         }
       ],
       miniVariant: false,
