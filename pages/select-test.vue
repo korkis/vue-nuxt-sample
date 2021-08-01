@@ -144,6 +144,7 @@ export default {
     },
     clear (item) {
       item.selectedCoupon = 0;
+      console.log('item', item);
     },
     async couponChanged (e, item) {
       // alert('잘못 선택하셨습니다.');
@@ -193,6 +194,8 @@ export default {
           items: [
             {
               id: 'item_option1',
+              selectedCoupon: null,
+
               coupons: [
                 {
                   seq: 0,
@@ -216,6 +219,7 @@ export default {
             },
             {
               id: 'item_option2',
+              selectedCoupon: null,
               coupons: [
                 {
                   seq: 0,
@@ -234,6 +238,7 @@ export default {
           items: [
             {
               id: 'item_option3',
+              selectedCoupon: null,
               coupons: [
                 {
                   seq: 0,
